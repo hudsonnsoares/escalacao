@@ -1,7 +1,16 @@
 var selecao = document.querySelectorAll('.circleJogador');
 
-console.log(selecao)
+for(i = 0; i < selecao.length; i++){
+  var selecId = selecao[i].id;
+  var selecElemento = document.querySelector('#'+selecId);
 
-function selecionaPosicao(posicao, selecao){
-  alert();
+  acaoJogador(selecElemento);
+}
+
+
+function acaoJogador(idElenmento){
+  idElenmento.addEventListener("click", function(){
+    console.log(idElenmento);
+  });
+  return idElenmento;
 }

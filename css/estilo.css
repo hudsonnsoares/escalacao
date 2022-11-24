@@ -1,9 +1,80 @@
+*{
+  margin:0;
+  padding: 0;
+}
+#bgfundo{
+  background: url('../bg-estadio.jpg') repeat-x;
+  background-size: cover;
+  width: 100%;
+  height: 100% !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  overflow-x: hidden;
+}
 #gramado{
   background:green;
-  width: 50%;
+  width: 100%;
   height: 850px;
-  margin: 0 auto;
+  margin: 20px auto;
   position: relative;
+}
+#titeleSelecao{
+  text-align: center;
+  background: rgba(255, 255, 255, 1);
+  width: 33%;
+  box-shadow: 0 0 20px yellowgreen;
+  position: absolute;
+  z-index: 5;
+  color: #666;
+  padding: 20px;
+  top: 50%;
+  left: 16.2%;
+}
+#tittleSuccess{
+  color: yellowgreen;
+}
+#tittleErro{
+  color: red;
+}
+.buttons button{
+  height: 50px;
+}
+.lista{
+  background: #f2f2f2;
+  margin-top: 20px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #666;
+  text-transform: uppercase;
+}
+.lista h2{
+  text-align: center;
+  padding: 20px 0;
+  background: #000;
+  color: #f2f2f2;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.lista h2 span{
+  color:yellow !important;
+  font-weight: bold;
+}
+.lista ul{
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.lista li{
+  padding: 10px;
+  border:1px solid #666;
+  border-radius: 20px;
+  margin:10px 0;
+  transition: background 0.4s ease-in;
+}
+.lista li:hover, .lista li:active, .lista li:focus{
+  background-color: yellowgreen;
+  cursor: pointer;
 }
 #linhacampo{
   border:5px solid white;
@@ -45,17 +116,39 @@
   left: 25%;
 }
 .circleJogador{
-  width: 70px;
-  height: 70px;
-  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
   background-color:whitesmoke;
   box-shadow: 0 0 20px #332;
+  cursor: pointer;
+}
+@keyframes animacao{
+
+}
+.circleJogador span{
+  position: relative;
+  left: 30px;
+  top: -20px;
+  font-size:25px;
+  background-color: yellowgreen;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
 }
 .circleJogador p{
-  position: relative;
   text-align: center;
-  top: 10px;
-  font-weight: 600;
+  position: absolute;
+  width: 140px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: black;
+  color: yellow;
+  padding: 6px;
+  border-radius:10px;
+  bottom:-10px;
+  left:-20px;
 }
 #gol{
   position: absolute;

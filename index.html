@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,40 +9,86 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+  <title>Seleção Empreendedora</title>
 </head>
 
 <body>
+<section id="bgfundo">
+  
   <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
-    <div class="container">
-      <div id="gramado">
-          <div id="linhacampo"></div>
-          <div id="golTop"></div>
-          <div id="golBot"></div>
-          <div id="circuloCentral"></div>
-          <div id="linhaCentral"></div>
-
-          <div id="gol" class="circleJogador"><p for="gol">Clique Aqui</p></div>
-          <div id="zag1" class="circleJogador"></div>
-          <div id="zag2" class="circleJogador"></div>
-          <div id="latE" class="circleJogador"></div>
-          <div id="latD" class="circleJogador"></div>
-          <div id="vol" class="circleJogador"></div>
-          <div id="mE" class="circleJogador"></div>
-          <div id="mD" class="circleJogador"></div>
-          <div id="pD" class="circleJogador"></div>
-          <div id="ata" class="circleJogador"></div>
-          <div id="pE" class="circleJogador"></div>
+    <div class="row mt-5 buttons">
+      <div class="d-grid gap-2 mb-3 col-5 mx-auto">
+        <button class="btn btn-warning" id="reset">RESETAR</button>
       </div>
     </div>
-  </main>
+  </header>
+  
+  <section id="conteuPrincipal">
+    <main>
+      <div class="container">     
 
-  <footer>
-    <!-- place footer here -->
-  </footer>
+        <div class="row">
+          <div class="col-6">
+            <!--Gramado -->
+            <div id="titeleSelecao" class="d-none">
+              <h2>Seleção</h2>
+            </div>
+            <div id="gramado">
+                <div id="linhacampo"></div>
+                <div id="golTop"></div>
+                <div id="golBot"></div>
+                <div id="circuloCentral"></div>
+                <div id="linhaCentral"></div>
+
+                <div id="gol" class="open circleJogador"><span>01</span><p for="gol">Selecione</p></div>
+                <div id="zag1" class="open circleJogador"><span>03</span><p for="zag1">Selecione</p></div>
+                <div id="zag2" class="open circleJogador"><span>04</span><p for="zag2">Selecione</p></div>
+                <div id="latE" class="open circleJogador"><span>06</span><p for="latE">Selecione</p></div>
+                <div id="latD" class="open circleJogador"><span>02</span><p for="latD">Selecione</p></div>
+                <div id="vol" class="open circleJogador"><span>05</span><p for="vol">Selecione</p></div>
+                <div id="mE" class="open circleJogador"><span>08</span><p for="mE">Selecione</p></div>
+                <div id="mD" class="open circleJogador"><span>10</span><p for="mD">Selecione</p></div>
+                <div id="pD" class="open circleJogador"><span>11</span><p for="pD">Selecione</p></div>
+                <div id="pE" class="open circleJogador"><span>07</span><p for="pE">Selecione</p></div>
+                <div id="ata" class="open circleJogador"><span>09</span><p for="ata">Selecione</p></div>
+            </div>
+            <!--Gramado -->
+          </div>
+
+          <!--Lista de Competências -->
+          <div class="col-6">
+            <div class="lista">
+              <h2>Escale a <span>Seleção Empreendedora</span></h2>
+              <ul>
+                <li class="open" id="criatividade">Criatividade</li>
+                <li class="open" id="resolucao">Resolução de problemas</li>
+                <li class="open" id="fake1">Autoritarismo</li>
+                <li class="open" id="diversidade">Diversidade</li>
+                <li class="open" id="resiliencia">Resiliência</li>
+                <li class="open" id="colaboracao">Colaboração</li>
+                <li class="open" id="planejamento">Planejamento</li>
+                <li class="open" id="fake2">Resistência as Mudanças</li>
+                <li class="open" id="lideranca">Liderança</li>
+                <li class="open" id="empatia">Empatia</li>
+                <li class="open" id="comunicacao">Comunicação</li>
+                <li class="open" id="equipe">Trabalho em Equipe</li>
+                <li class="open" id="fake3">Descontrole Emocional</li>
+                <li class="open" id="fake4">Individualismo</li>
+                <li class="open" id="aprendizagem">Aprendizagem Empreendedora</li>
+                <li class="open" id="riscosCalculados">Correr Riscos Calculados</li>
+                <li class="open" id="persistencia">Persistência</li>
+                <li class="open" id="busca">Busca de Oportunidades e Iniciativa</li>
+                <li class="open" id="fake5">Dificuldade de Lidar com o Inesperado</li>
+              </ul>
+            </div>
+          </div>
+          <!--Lista de Competências -->
+
+        </div>
+      </div>
+    </main>
+  </section>
+</section>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

@@ -1,9 +1,39 @@
 #gramado{
   background:green;
-  width: 50%;
+  width: 100%;
   height: 850px;
-  margin: 0 auto;
+  margin: 20px auto;
   position: relative;
+}
+.buttons button{
+  height: 50px;
+}
+.lista{
+  background: #f2f2f2;
+  margin-top: 20px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #666;
+}
+.lista h2{
+  text-align: center;
+  padding: 20px;
+}
+.lista ul{
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.lista li{
+  padding: 10px;
+  border:1px solid #666;
+  border-radius: 20px;
+  margin:10px 0;
+  transition: background 0.4s ease-in;
+}
+.lista li:hover, .lista li:active, .lista li:focus{
+  background-color: aquamarine;
+  cursor: pointer;
 }
 #linhacampo{
   border:5px solid white;
@@ -45,17 +75,23 @@
   left: 25%;
 }
 .circleJogador{
-  width: 70px;
-  height: 70px;
-  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
   background-color:whitesmoke;
   box-shadow: 0 0 20px #332;
+  cursor: pointer;
 }
 .circleJogador p{
-  position: relative;
   text-align: center;
-  top: 10px;
+  position: absolute;
+  text-transform: uppercase;
+  width: 130px;
   font-weight: 600;
+  background-color: black;
+  color: aquamarine;
+  padding: 5px;
+  bottom:-10px;
 }
 #gol{
   position: absolute;

@@ -1,0 +1,2 @@
+// Seleciona a competência X
+// Verificar se esta disponivel (open) / (close). Se tiver adicioanr o "texto da competência" se não "Selecionke" e remover o item selecionado da lista

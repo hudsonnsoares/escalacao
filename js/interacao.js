@@ -3,26 +3,6 @@ var reset = document.getElementById('reset');
 reset.addEventListener("click",function(){
   location.reload();
 })
-
-
-//Lista Escalação
-
-var selecaoCampo = document.querySelectorAll('.circleJogador');
-
-
-for(i = 0; i < selecaoCampo.length; i++){
-  var selecId = selecaoCampo[i].id;
-  var selecPlayer = document.querySelector('#'+selecId);
-
-  if(selecPlayer.className == 'open'){
-    //console.log(selecPlayer, selecId);
-    break;
-  }else{
-    //console.log(selecPlayer);
-  }
-}
-// Lista Escalação
-
 // Lista Competências
 var selecaoLista = document.querySelectorAll('.lista li');
 
@@ -38,20 +18,34 @@ function addList(idList){
     var selecaoCampo = document.querySelectorAll('.circleJogador');
     for(i = 0; i < selecaoCampo.length; i++){
       selecId = selecaoCampo[i].id;
-      selecPlayer = document.querySelector("#"+selecId);
+      selecPlayer = document.querySelector("#" + selecId);
+      selecNumber = document.querySelector("#"+selecId+" span");
+
+      var quantidadeSelecionado = 0; 
 
       if(selecPlayer.classList.contains('open')){
-        console.log("ok "+ selecaoCampo[i].id);
         if(idList.className == 'open'){
           idList.classList.add('d-none');
           selecPlayer.classList.remove('open');
           texto = idList.textContent;
-          selecPlayer.innerHTML = "<p>" + texto + "<p>";
+          numero = selecNumber.textContent;
+          selecPlayer.innerHTML = "<span>"+ numero + "</span><p>" + texto + "<p>";
+          if(idList == "fake"){
+            fake = 1;
+            console.log(fake);
+          }else{
+            fake = 0;
+            console.log(fake + idList.id)
+          }
+        }else{
+          console.log(selecPlayer.classList.contains('open'));
         }
-      }else{
-        console.log("nada ok -> " + selecPlayer.className);
       }
     }
   });
   return idList;
+}
+
+function verificarEscalacao(){
+  
 }
